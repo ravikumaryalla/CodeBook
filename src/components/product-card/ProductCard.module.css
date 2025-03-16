@@ -1,0 +1,60 @@
+.ProductCard {
+  padding-bottom: 0.5rem;
+
+  width: 300px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  gap: 0.8rem;
+}
+
+.ProductCardImage img {
+  width: 100%;
+  /* height: 300px; */
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.ProductCardInfo {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.ProductCardInfo p {
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 5rem;
+}
+.ProductCardRating {
+  display: flex;
+  gap: 0.5rem;
+}
+.cardFooter {
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.cardFooter p {
+  display: flex;
+  align-items: flex-end;
+}
+.cardFooter button {
+  min-width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #1d4ed8;
+  color: #fff;
+  border: none;
+}
+@media screen and (max-width: 1200px) {
+  .ProductCard {
+    width: 250px;
+  }
+}
