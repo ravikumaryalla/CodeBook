@@ -3,10 +3,13 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { useState } from "react";
 import data from "../../data/data";
 import ProductCard from "../../components/product-card/ProductCard";
+import Filters from "./filters/Filters";
 
 const Products = () => {
+  const [showFilters, setShowFilters] = useState(false);
   return (
     <div className={classes.productsContainer}>
+      {showFilters && <Filters onClose={() => setShowFilters(false)} />}
       <div className={classes.header}>
         <p>All E-Books</p>
         <MoreVertIcon
@@ -17,6 +20,7 @@ const Products = () => {
             borderRadius: "0.2rem",
             padding: "0.2rem",
           }}
+          onClick={() => setShowFilters(true)}
         />
       </div>
       <div className={classes.productContent}>

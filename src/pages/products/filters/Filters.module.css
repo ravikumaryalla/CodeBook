@@ -1,0 +1,41 @@
+.filters {
+  padding: 1rem;
+  width: 18rem;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 10;
+  background-color: var(--background-color);
+  left: 0;
+  top: 0;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLeft {
+  font-weight: 500;
+}
+
+.filterh1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.filterRadioContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filterCheckboxContainer {
+  display: flex;
+  flex-direction: column;
+}
