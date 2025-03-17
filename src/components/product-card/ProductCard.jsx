@@ -1,5 +1,6 @@
 import classes from "./ProductCard.module.css";
 import Rating from "@mui/material/Rating";
+import StarBorderIcon from "@mui/icons-material/StarBorder";
 
 const ProductCard = ({ title, description, price, image, rating }) => {
   return (
@@ -15,11 +16,12 @@ const ProductCard = ({ title, description, price, image, rating }) => {
             readOnly
             value={rating}
             precision={0.5}
-            sx={{
-              "& .MuiRating-icon": {
-                border: "1px solid var(--text-color)",
-              },
-            }}
+            emptyIcon={
+              <StarBorderIcon
+                style={{ color: "var(--text-color)" }}
+                fontSize="inherit"
+              />
+            }
           />
         </div>
         <div className={classes.cardFooter}>
